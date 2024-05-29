@@ -1,0 +1,167 @@
+/* Dark Mode CSS */
+/* ///////////// */
+/*  sass --no-source-map --watch src/assets/main.scss src/assets/main.css*/
+/* Define styles for the default root window element */
+:root {
+  --background-color-primary: #ebebeb;
+  --background-color-secondary: #ebe9e9;
+  --background-color-tertiary: #354157;
+  --background-color-main: rgb(183, 93, 79);
+  --accent-color: #cacaca;
+  --text-primary-color: #222;
+  --element-size: 4rem;
+}
+
+/* Define styles for the root window with dark - mode preference */
+:root.darkMode {
+  --background-color-primary: #1e1e1e;
+  --background-color-secondary: #2d2d30;
+  --background-color-tertiary: #4e6082;
+  --background-color-main: rgb(165,102,92);
+  --accent-color: #3f3f3f;
+  --text-primary-color: #ffffff;
+}
+
+p {
+  color: var(--text-primary-color);
+}
+
+.switch-checkbox {
+  display: none;
+}
+
+.switch-label {
+  width: var(--element-size);
+  border-radius: var(--element-size);
+  border: calc(var(--element-size) * 0.025) solid var(--accent-color);
+  padding: calc(var(--element-size) * 0.1);
+  font-size: calc(var(--element-size) * 0.3);
+  height: calc(var(--element-size) * 0.35);
+  align-items: center;
+  background: var(--text-primary-color);
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: background 0.3s ease;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.switch-toggle {
+  position: absolute;
+  background-color: var(--background-color-primary);
+  border-radius: 50%;
+  top: calc(var(--element-size) * 0.07);
+  left: calc(var(--element-size) * 0.07);
+  height: calc(var(--element-size) * 0.4);
+  width: calc(var(--element-size) * 0.4);
+  transform: translateX(0);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.switch-toggle-checked {
+  transform: translateX(calc(var(--element-size) * 0.6)) !important;
+}
+
+body {
+  color: var(--text-primary-color);
+  background-color: var(--background-color-secondary);
+  margin: 0 0 5rem 0;
+  height: 100%;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  background-color: var(--background-color-main);
+  text-align: center;
+}
+header h1 {
+  margin: auto;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  width: 100%;
+}
+header nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-width: 0 2px;
+  border-style: solid;
+}
+header nav a:hover {
+  border-width: 2px 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+section h3 {
+  text-align: center;
+}
+
+.baseContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.baseContent p {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--accent-color);
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--background-color-tertiary);
+  color: var(--text-primary-color);
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+.defineImg {
+  margin: auto;
+  width: 70%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.4s;
+}
+
+i {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+@media (min-width: 1281px) {
+  #app {
+    font-size: 1.3rem;
+  }
+  .home {
+    height: -webkit-fill-available;
+    align-items: center;
+  }
+}
