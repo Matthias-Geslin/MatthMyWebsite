@@ -1,12 +1,13 @@
 /* Dark Mode CSS */
 /* ///////////// */
-/*  sass --no-source-map --watch src/assets/main.scss src/assets/main.css*/
+/*  sass --no-source-map --watch src/assets/main.scss src/assets/main.css */
 /* Define styles for the default root window element */
 :root {
   --background-color-primary: #ebebeb;
   --background-color-secondary: #ebe9e9;
   --background-color-tertiary: #354157;
-  --background-color-main: rgb(183, 93, 79);
+  --background-color-main: #b75d4f;
+  --background-color-main-secondary: #3e71a7;
   --accent-color: #cacaca;
   --text-primary-color: #222;
   --element-size: 4rem;
@@ -18,12 +19,9 @@
   --background-color-secondary: #2d2d30;
   --background-color-tertiary: #4e6082;
   --background-color-main: rgb(165,102,92);
+  --background-color-main-secondary: #3e71a7;
   --accent-color: #3f3f3f;
   --text-primary-color: #ffffff;
-}
-
-p {
-  color: var(--text-primary-color);
 }
 
 .switch-checkbox {
@@ -76,15 +74,16 @@ body {
   font-weight: normal;
 }
 
+main {
+  margin-bottom: 15rem;
+}
+
 header {
   display: flex;
   flex-direction: column;
   line-height: 1.5;
   background-color: var(--background-color-main);
   text-align: center;
-}
-header h1 {
-  margin: auto;
 }
 header nav {
   display: flex;
@@ -106,40 +105,35 @@ header nav a:hover {
 section {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-section h3 {
+section h2 {
   text-align: center;
 }
-
-.baseContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-}
-.baseContent p {
-  padding: 1rem;
-  border-radius: 1rem;
-  background-color: var(--accent-color);
+section iframe {
+  width: 95%;
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  align-items: center;
   position: fixed;
   bottom: 0;
-  background-color: var(--background-color-tertiary);
+  background-color: var(--background-color-main-secondary);
   color: var(--text-primary-color);
+  font-weight: bold;
 }
 footer ul {
   display: flex;
   justify-content: space-around;
-  list-style: none;
+  flex-direction: column;
   padding: 0;
 }
 
-.defineImg {
-  margin: auto;
-  width: 70%;
+p {
+  color: var(--text-primary-color);
 }
 
 a {
@@ -148,14 +142,22 @@ a {
   transition: 0.4s;
 }
 
-i {
+ul {
+  list-style: none;
   display: flex;
-  place-items: center;
-  place-content: center;
-  width: 32px;
-  height: 32px;
+  flex-direction: column;
+  align-items: center;
+}
+ul.main-links li {
+  margin: 1rem;
 }
 
+@media (min-width: 959px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 @media (min-width: 1281px) {
   #app {
     font-size: 1.3rem;
