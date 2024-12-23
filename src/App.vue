@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import TheFoot from './components/TheFoot.vue'
 </script>
 
 <script>
@@ -79,6 +80,7 @@ export default {
   </header>
 
   <RouterView />
+<TheFoot />
 </template>
 
 <style scoped>
