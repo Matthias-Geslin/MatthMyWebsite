@@ -3,18 +3,18 @@
 
 <template>
   <ContentItem>
-    <p>
+    <section>
+      <h2>LiveStream Twitch</h2>
       <iframe
           src="https://player.twitch.tv/?channel=matthmoica&parent=localhost"
           height="500"
-          width="100%"
           frameborder="0"
           allowfullscreen>
       </iframe>
-    </p>
-    <p>
-      Dernières vidéos
-      <iframe width="560" 
+    </section>
+    <section>
+      <h2>Dernière Vidéo</h2>
+      <iframe 
         height="315" 
         src="https://www.youtube.com/embed/DxVV_fpCCtI?si=0CDdZmCIpA7IX5G4" 
         frameborder="0" 
@@ -22,8 +22,16 @@
         referrerpolicy="strict-origin-when-cross-origin" 
         allowfullscreen>
       </iframe>
-    </p>
+    </section>
 
-    <iframe src="https://discord.com/widget?id=1230866705572565052&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    <section>
+      <h2>Discord Communautaire</h2>
+      <iframe src="https://discord.com/widget?id=1230866705572565052&theme=dark" 
+        height="500" 
+        allowtransparency="true" 
+        frameborder="0" 
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+      </iframe>
+    </section>
   </ContentItem>
 </template>

@@ -3,20 +3,18 @@
 
 <template>
   <ContentItem>
-    <p>
+    <section>
       <iframe
           src="https://player.twitch.tv/?channel=matthmoica&parent=localhost"
           height="500"
-          width="100%"
           frameborder="0"
           allowfullscreen>
       </iframe>
-    </p>
-    <p>
+    </section>
+    <section>
       <iframe src="https://www.twitch.tv/embed/matthmoica/chat?parent=localhost"
-        height="500"
-        width="100%">
+        height="500">
       </iframe>
-    </p>
+    </section>
   </ContentItem>
 </template>
