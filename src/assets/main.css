@@ -157,6 +157,11 @@ ul.main-links li {
     flex-direction: row;
     justify-content: space-around;
   }
+  ul.main-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media (min-width: 1281px) {
   #app {
@@ -166,4 +171,5 @@ ul.main-links li {
     height: -webkit-fill-available;
     align-items: center;
   }
+  
 }
