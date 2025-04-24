@@ -12,7 +12,8 @@
           allowfullscreen>
       </iframe>
     </section>
-    <section>
+
+    <!-- <section>
       <h2>Dernière Vidéo</h2>
       <iframe 
         height="315" 
@@ -22,7 +23,7 @@
         referrerpolicy="strict-origin-when-cross-origin" 
         allowfullscreen>
       </iframe>
-    </section>
+    </section> -->
 
     <section>
       <h2>Discord Communautaire</h2>
