@@ -56,7 +56,7 @@ export default {
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/stream">Stream</RouterLink>
-        <RouterLink to="/youtube">YouTube</RouterLink>
+        <!-- <RouterLink to="/youtube">YouTube</RouterLink> -->
         <RouterLink to="/links">Liens</RouterLink>
 
         <div class="card">
