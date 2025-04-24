@@ -5,7 +5,7 @@
 <template>
   <ContentItem>
     <section>
-      <h2>Youtube Last vid</h2>
+      <h2>Youtube Dernière vidéo</h2>
       <iframe width="560" 
         height="315" 
         src="https://www.youtube.com/embed/DxVV_fpCCtI?si=0CDdZmCIpA7IX5G4" 
