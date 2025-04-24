@@ -1,9 +1,9 @@
 <template>
     <footer>
         <ul>
-            <li><RouterLink to="/">Home</RouterLink></li>
+            <li><RouterLink to="/">Page Principale</RouterLink></li>
             <li><RouterLink to="/stream">Stream</RouterLink></li>
-            <li><RouterLink to="/youtube">YouTube</RouterLink></li>
+            <!-- <li><RouterLink to="/youtube">YouTube</RouterLink></li> -->
             <li><RouterLink to="/links">Liens</RouterLink></li>
         </ul>
         <ul>
