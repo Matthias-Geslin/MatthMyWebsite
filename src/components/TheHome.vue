@@ -6,7 +6,7 @@
     <section>
       <h2>LiveStream Twitch</h2>
       <iframe
-          src="https://player.twitch.tv/?channel=matthmoica&parent=localhost"
+          src="https://player.twitch.tv/?channel=matthmoica&parent=stream.matthmoiça.fr"
           height="500"
           frameborder="0"
           allowfullscreen>
