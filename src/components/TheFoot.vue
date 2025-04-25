@@ -7,8 +7,8 @@
             <li><RouterLink to="/links">Liens</RouterLink></li>
         </ul>
         <ul>
-            <li>Mentions Légales</li>
-            <li>Créateur</li>
+            <li><a href="#">Mentions Légales</a></li>
+            <li><a href="https://matthmoiça.fr">Créateur</a></li>
         </ul>
     </footer>
 </template>
